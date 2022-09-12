@@ -21,7 +21,6 @@ axis_X = np.arange(0, 256, 1)
 
 plt.plot(freq_matrix)
 plt.bar(axis_X,freq_matrix)
-plt.ylabel("value")
 plt.show()
 
 p = freq_matrix / (rows*cols)
@@ -30,10 +29,6 @@ for i in range (len(cdf)):
     cdf[i] = np.sum(p[:i])              
 
 plt.plot(cdf)
-plt.title('The cumulative distribution function (cdf)')
 plt.bar(axis_X,cdf)
-plt.xlabel('Pixel Value')
-plt.ylabel('Probability')
-plt.title('Nomalized Histogram')
 plt.show()
 # np.savetxt('result.txt',freq_matrix)
