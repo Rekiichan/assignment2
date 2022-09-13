@@ -15,8 +15,6 @@ for r in range(0,rows):
     for c in range(0,cols):
         sum += 1
 
-# print(sum)
-
 axis_X = np.arange(0, 256, 1)
 
 plt.plot(freq_matrix)
